@@ -1,0 +1,54 @@
+---
+---
+@keyframes cani {
+	0%, 100% {
+		color: #ffed93;
+		text-shadow: 2px 2px #f8f8f8;
+		transform: skewX(20deg);
+		transform: rotate(10deg);
+	}
+	50% {
+		color: #f8f8f8;
+		text-shadow: 2px 2px #ffed93;
+		transform: skewX(-20deg);
+		transform: rotate(-10deg);
+
+	}
+}
+body {
+	font-family: sans-serif;
+	background: url("../img/bg.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+.container {
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px solid purple;
+
+	p {
+		float: right;
+		color: #f8f8f8;
+		font-size: 32px;
+		text-align: center;
+	}
+
+	img {
+		vertical-align: middle;
+		margin-right: 20px;
+		width: 720px;
+		height: 450px;
+		float: left;
+	}
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	color: #f8f8f8;
+}
+
+.yellow {
+	color: #fff5aa;
+	font-size: 100px;
+	animation-name: cani;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
