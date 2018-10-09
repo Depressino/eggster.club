@@ -23,13 +23,16 @@ body {
 
 .container {
 	background-color: rgba(0, 0, 0, 0.3);
-	border: 1px solid purple;
+	margin: 15px;
+	padding: 3px;
+	border: 2px solid purple;
 
 	p {
-		float: right;
 		color: #f8f8f8;
 		font-size: 32px;
 		text-align: center;
+		float: right;
+		margin: 15px;
 	}
 
 	img {
@@ -37,7 +40,9 @@ body {
 		margin-right: 20px;
 		width: 720px;
 		height: 450px;
-		float: left;
+		display: inline-block;
+		width: 400px;
+		height: 300px;
 	}
 }
 
@@ -51,4 +56,6 @@ h1, h2, h3, h4, h5, h6, p {
 	animation-name: cani;
 	animation-duration: 1s;
 	animation-iteration-count: infinite;
+	text-align: center;
+	margin: auto;
 }
