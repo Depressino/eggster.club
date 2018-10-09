@@ -38,8 +38,6 @@ body {
 	img {
 		vertical-align: middle;
 		margin-right: 20px;
-		width: 720px;
-		height: 450px;
 		display: inline-block;
 		width: 400px;
 		height: 300px;
@@ -58,4 +56,34 @@ h1, h2, h3, h4, h5, h6, p {
 	animation-iteration-count: infinite;
 	text-align: center;
 	margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+	.yellow {
+		animation: none;
+		color: #ffed93;
+		font-size: 46pt;
+	}
+
+	.container {
+		overflow: auto;
+		margin: 2px;
+		border: 1px solid purple;
+
+		p {
+			color: #f8f8f8;
+			font-size: 0.6em;
+			display: block;
+			clear: both;
+		}
+
+		img {
+			width: 50%;
+			height: 10%;
+			margin: auto;
+			text-align: center;
+			display: block;
+			vertical-align: initial;
+		}
+	}
 }
