@@ -1,3 +1,5 @@
 navigation:
   - title: Home
     url: /
+  - title: Apply
+    url: /apply.html
