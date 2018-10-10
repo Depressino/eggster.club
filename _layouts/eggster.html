@@ -11,7 +11,20 @@
 	<link href="/assets/css/eggster.css" rel="stylesheet">
 </head>
 <body>
-	<h1 class="yellow">Eggster</h1>
-	{{ content }}
+	<div class="navbar">
+		<ul>
+			{% for item in site.navigation %}
+			{% assign class = nil %}
+			{% if page.url == item.url %}
+			{% assign class = 'active' %}
+			{% endif %}
+			<li><a href="{{ item.url }}" class="{{ class }}">{{ item.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="page">
+		<h1 class="yellow">Eggster</h1>
+		{{ content }}
+	</div>
 </body>
 </html>
